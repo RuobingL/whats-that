@@ -7,17 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F22965B71FE06A7800A836DB /* PhotoIdentificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965B61FE06A7800A836DB /* PhotoIdentificationViewController.swift */; };
+		F22965B91FE06AB400A836DB /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965B81FE06AB400A836DB /* PhotoDetailsViewController.swift */; };
+		F22965BB1FE06AD900A836DB /* SearchTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965BA1FE06AD900A836DB /* SearchTimelineViewController.swift */; };
+		F22965BD1FE06AEE00A836DB /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965BC1FE06AEE00A836DB /* SafariViewController.swift */; };
+		F22965C41FE06D4600A836DB /* WikipediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965C31FE06D4600A836DB /* WikipediaResult.swift */; };
+		F22965C61FE06D5900A836DB /* GoogleVisionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965C51FE06D5900A836DB /* GoogleVisionResult.swift */; };
+		F22965C81FE06E1200A836DB /* FavoritePhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965C71FE06E1200A836DB /* FavoritePhotosTableViewController.swift */; };
+		F22965CA1FE06E3700A836DB /* WikipediaAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965C91FE06E3700A836DB /* WikipediaAPIManager.swift */; };
+		F22965CC1FE06E4900A836DB /* GoogleVisionAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965CB1FE06E4900A836DB /* GoogleVisionAPIManager.swift */; };
+		F22965CE1FE06E5800A836DB /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965CD1FE06E5800A836DB /* PersistanceManager.swift */; };
 		F2F0FA141FBA5A3C00FB7A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0FA131FBA5A3C00FB7A15 /* AppDelegate.swift */; };
-		F2F0FA161FBA5A3C00FB7A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0FA151FBA5A3C00FB7A15 /* ViewController.swift */; };
+		F2F0FA161FBA5A3C00FB7A15 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F0FA151FBA5A3C00FB7A15 /* MenuViewController.swift */; };
 		F2F0FA191FBA5A3C00FB7A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0FA171FBA5A3C00FB7A15 /* Main.storyboard */; };
 		F2F0FA1B1FBA5A3C00FB7A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F0FA1A1FBA5A3C00FB7A15 /* Assets.xcassets */; };
 		F2F0FA1E1FBA5A3C00FB7A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F0FA1C1FBA5A3C00FB7A15 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F22965B61FE06A7800A836DB /* PhotoIdentificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIdentificationViewController.swift; sourceTree = "<group>"; };
+		F22965B81FE06AB400A836DB /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		F22965BA1FE06AD900A836DB /* SearchTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTimelineViewController.swift; sourceTree = "<group>"; };
+		F22965BC1FE06AEE00A836DB /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
+		F22965C31FE06D4600A836DB /* WikipediaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaResult.swift; sourceTree = "<group>"; };
+		F22965C51FE06D5900A836DB /* GoogleVisionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionResult.swift; sourceTree = "<group>"; };
+		F22965C71FE06E1200A836DB /* FavoritePhotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotosTableViewController.swift; sourceTree = "<group>"; };
+		F22965C91FE06E3700A836DB /* WikipediaAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaAPIManager.swift; sourceTree = "<group>"; };
+		F22965CB1FE06E4900A836DB /* GoogleVisionAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionAPIManager.swift; sourceTree = "<group>"; };
+		F22965CD1FE06E5800A836DB /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 		F2F0FA101FBA5A3C00FB7A15 /* whats-that-RuobingL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whats-that-RuobingL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F0FA131FBA5A3C00FB7A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2F0FA151FBA5A3C00FB7A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2F0FA151FBA5A3C00FB7A15 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F2F0FA181FBA5A3C00FB7A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F0FA1A1FBA5A3C00FB7A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F0FA1D1FBA5A3C00FB7A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +55,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F22965B51FE06A3600A836DB /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0FA151FBA5A3C00FB7A15 /* MenuViewController.swift */,
+				F22965B61FE06A7800A836DB /* PhotoIdentificationViewController.swift */,
+				F22965B81FE06AB400A836DB /* PhotoDetailsViewController.swift */,
+				F22965BA1FE06AD900A836DB /* SearchTimelineViewController.swift */,
+				F22965BC1FE06AEE00A836DB /* SafariViewController.swift */,
+				F22965C71FE06E1200A836DB /* FavoritePhotosTableViewController.swift */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		F22965C01FE06CD100A836DB /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F2F0FA1A1FBA5A3C00FB7A15 /* Assets.xcassets */,
+				F2F0FA1C1FBA5A3C00FB7A15 /* LaunchScreen.storyboard */,
+				F2F0FA171FBA5A3C00FB7A15 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F22965C11FE06CEC00A836DB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F22965C91FE06E3700A836DB /* WikipediaAPIManager.swift */,
+				F22965CB1FE06E4900A836DB /* GoogleVisionAPIManager.swift */,
+				F22965CD1FE06E5800A836DB /* PersistanceManager.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F22965C21FE06D2700A836DB /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F22965C31FE06D4600A836DB /* WikipediaResult.swift */,
+				F22965C51FE06D5900A836DB /* GoogleVisionResult.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		F2F0FA071FBA5A3B00FB7A15 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +116,11 @@
 		F2F0FA121FBA5A3C00FB7A15 /* whats-that-RuobingL */ = {
 			isa = PBXGroup;
 			children = (
+				F22965C21FE06D2700A836DB /* models */,
 				F2F0FA131FBA5A3C00FB7A15 /* AppDelegate.swift */,
-				F2F0FA151FBA5A3C00FB7A15 /* ViewController.swift */,
-				F2F0FA171FBA5A3C00FB7A15 /* Main.storyboard */,
-				F2F0FA1A1FBA5A3C00FB7A15 /* Assets.xcassets */,
-				F2F0FA1C1FBA5A3C00FB7A15 /* LaunchScreen.storyboard */,
+				F22965B51FE06A3600A836DB /* view controllers */,
+				F22965C01FE06CD100A836DB /* views */,
+				F22965C11FE06CEC00A836DB /* utils */,
 				F2F0FA1F1FBA5A3C00FB7A15 /* Info.plist */,
 			);
 			path = "whats-that-RuobingL";
@@ -136,8 +198,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F0FA161FBA5A3C00FB7A15 /* ViewController.swift in Sources */,
+				F22965B91FE06AB400A836DB /* PhotoDetailsViewController.swift in Sources */,
+				F22965C41FE06D4600A836DB /* WikipediaResult.swift in Sources */,
+				F2F0FA161FBA5A3C00FB7A15 /* MenuViewController.swift in Sources */,
+				F22965CE1FE06E5800A836DB /* PersistanceManager.swift in Sources */,
+				F22965C81FE06E1200A836DB /* FavoritePhotosTableViewController.swift in Sources */,
+				F22965B71FE06A7800A836DB /* PhotoIdentificationViewController.swift in Sources */,
 				F2F0FA141FBA5A3C00FB7A15 /* AppDelegate.swift in Sources */,
+				F22965BD1FE06AEE00A836DB /* SafariViewController.swift in Sources */,
+				F22965BB1FE06AD900A836DB /* SearchTimelineViewController.swift in Sources */,
+				F22965CC1FE06E4900A836DB /* GoogleVisionAPIManager.swift in Sources */,
+				F22965CA1FE06E3700A836DB /* WikipediaAPIManager.swift in Sources */,
+				F22965C61FE06D5900A836DB /* GoogleVisionResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

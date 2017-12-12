@@ -208,10 +208,10 @@
             </objects>
             <point key="canvasLocation" x="2376" y="-194"/>
         </scene>
-        <!--Safari View Controller-->
+        <!--View Controller-->
         <scene sceneID="IJb-r2-DJK">
             <objects>
-                <viewController id="I11-K0-tAP" customClass="SafariViewController" sceneMemberID="viewController">
+                <viewController id="I11-K0-tAP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FYr-uG-s6a" customClass="SafariViewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
