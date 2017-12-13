@@ -1,4 +1,5 @@
 import UIKit
+import SafariServices
 
 class PhotoDetailsViewController: UIViewController {
 
@@ -21,6 +22,11 @@ class PhotoDetailsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func wikiButtonPressed(_ sender: Any) {
+        let svc = SFSafariViewController(url: URL(string: "http://www.wikipedia.org/wiki/\(word)")!)
+        self.present(svc, animated: true, completion: nil)
     }
 }
 

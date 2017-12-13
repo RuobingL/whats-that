@@ -193,6 +193,9 @@
                                 <rect key="frame" x="20" y="611" width="38" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Wiki"/>
+                                <connections>
+                                    <action selector="wikiButtonPressed:" destination="Abz-Uf-Iet" eventType="touchUpInside" id="P53-ZR-vcn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkZ-SL-cPi">
                                 <rect key="frame" x="308" y="611" width="51" height="36"/>
