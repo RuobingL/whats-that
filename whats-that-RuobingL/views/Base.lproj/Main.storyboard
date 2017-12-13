@@ -188,6 +188,9 @@
                                 <rect key="frame" x="156.5" y="611" width="62" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Tweets"/>
+                                <connections>
+                                    <segue destination="D2C-U3-DfL" kind="show" id="4zf-wq-67M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJR-7w-AvZ">
                                 <rect key="frame" x="20" y="611" width="38" height="36"/>
@@ -242,6 +245,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3t-Ao-mMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2375.1999999999998" y="-194.75262368815595"/>
+        </scene>
+        <!--Search Timeline View Controller-->
+        <scene sceneID="qDj-Ih-R47">
+            <objects>
+                <viewController id="D2C-U3-DfL" customClass="SearchTimelineViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h5k-4V-3Dh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="iI8-Cx-NMO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Mb-kO-q5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3201" y="-198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yAl-hh-W6S">

@@ -6,4 +6,14 @@
 //  Copyright © 2017 Ruobing Lyu. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import TwitterKit
+
+class SearchTimelineViewController: TWTRTimelineViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let client = TWTRAPIClient()
+        self.dataSource = TWTRListTimelineDataSource(listSlug: "surfing", listOwnerScreenName: "stevenhepting", APIClient: client)
+    }
+}

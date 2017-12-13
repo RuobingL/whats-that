@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BFD73EB7F7E41D66BD0CDB0 /* Pods_whats_that_RuobingL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51000E41985329548D39B071 /* Pods_whats_that_RuobingL.framework */; };
 		F22965B71FE06A7800A836DB /* PhotoIdentificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965B61FE06A7800A836DB /* PhotoIdentificationViewController.swift */; };
 		F22965B91FE06AB400A836DB /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965B81FE06AB400A836DB /* PhotoDetailsViewController.swift */; };
 		F22965BB1FE06AD900A836DB /* SearchTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965BA1FE06AD900A836DB /* SearchTimelineViewController.swift */; };
@@ -27,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51000E41985329548D39B071 /* Pods_whats_that_RuobingL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whats_that_RuobingL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1608CB729EE62A42025FA2 /* Pods-whats-that-RuobingL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whats-that-RuobingL.release.xcconfig"; path = "Pods/Target Support Files/Pods-whats-that-RuobingL/Pods-whats-that-RuobingL.release.xcconfig"; sourceTree = "<group>"; };
+		DF693C72583E3980B4CA1FE6 /* Pods-whats-that-RuobingL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whats-that-RuobingL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whats-that-RuobingL/Pods-whats-that-RuobingL.debug.xcconfig"; sourceTree = "<group>"; };
 		F22965B61FE06A7800A836DB /* PhotoIdentificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIdentificationViewController.swift; sourceTree = "<group>"; };
 		F22965B81FE06AB400A836DB /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		F22965BA1FE06AD900A836DB /* SearchTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTimelineViewController.swift; sourceTree = "<group>"; };
@@ -53,12 +57,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFD73EB7F7E41D66BD0CDB0 /* Pods_whats_that_RuobingL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7579EEDB3DE7C8FA0D4BC657 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF693C72583E3980B4CA1FE6 /* Pods-whats-that-RuobingL.debug.xcconfig */,
+				5D1608CB729EE62A42025FA2 /* Pods-whats-that-RuobingL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFAD980DE5DCBF7BA8976444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51000E41985329548D39B071 /* Pods_whats_that_RuobingL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F22965B51FE06A3600A836DB /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +130,8 @@
 			children = (
 				F2F0FA121FBA5A3C00FB7A15 /* whats-that-RuobingL */,
 				F2F0FA111FBA5A3C00FB7A15 /* Products */,
+				7579EEDB3DE7C8FA0D4BC657 /* Pods */,
+				BFAD980DE5DCBF7BA8976444 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,10 +148,10 @@
 			children = (
 				F22965C21FE06D2700A836DB /* models */,
 				F2F0FA131FBA5A3C00FB7A15 /* AppDelegate.swift */,
+				F2F0FA1F1FBA5A3C00FB7A15 /* Info.plist */,
 				F22965B51FE06A3600A836DB /* view controllers */,
 				F22965C01FE06CD100A836DB /* views */,
 				F22965C11FE06CEC00A836DB /* utils */,
-				F2F0FA1F1FBA5A3C00FB7A15 /* Info.plist */,
 			);
 			path = "whats-that-RuobingL";
 			sourceTree = "<group>";
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2F0FA221FBA5A3C00FB7A15 /* Build configuration list for PBXNativeTarget "whats-that-RuobingL" */;
 			buildPhases = (
+				61AE4DB6C2914C47D03A45CD /* [CP] Check Pods Manifest.lock */,
 				F2F0FA0C1FBA5A3B00FB7A15 /* Sources */,
 				F2F0FA0D1FBA5A3B00FB7A15 /* Frameworks */,
 				F2F0FA0E1FBA5A3B00FB7A15 /* Resources */,
+				423D5902833AD94BAE57A67F /* [CP] Embed Pods Frameworks */,
+				18087AB082375D4E10A73141 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +225,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18087AB082375D4E10A73141 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whats-that-RuobingL/Pods-whats-that-RuobingL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		423D5902833AD94BAE57A67F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-whats-that-RuobingL/Pods-whats-that-RuobingL-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whats-that-RuobingL/Pods-whats-that-RuobingL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61AE4DB6C2914C47D03A45CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whats-that-RuobingL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2F0FA0C1FBA5A3B00FB7A15 /* Sources */ = {
@@ -352,6 +433,7 @@
 		};
 		F2F0FA231FBA5A3C00FB7A15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF693C72583E3980B4CA1FE6 /* Pods-whats-that-RuobingL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +448,7 @@
 		};
 		F2F0FA241FBA5A3C00FB7A15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D1608CB729EE62A42025FA2 /* Pods-whats-that-RuobingL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
