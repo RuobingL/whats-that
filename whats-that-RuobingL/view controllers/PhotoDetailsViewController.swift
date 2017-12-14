@@ -9,8 +9,8 @@ class PhotoDetailsViewController: UIViewController {
     @IBOutlet weak var textLabelTitle: UILabel!
     @IBOutlet weak var textViewLoad: UITextView!
     
-    var  word = "word"
-    
+    var word = "word"
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,10 +25,23 @@ class PhotoDetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let guest = segue.destination as! SearchTimelineViewController
+        guest.query = sender as! String
+    }
+    
     @IBAction func wikiButtonPressed(_ sender: Any) {
         let svc = SFSafariViewController(url: URL(string: "http://www.wikipedia.org/wiki/\(word)")!)
         self.present(svc, animated: true, completion: nil)
     }
+    
+    // Twitter button
+    @IBAction func twitterButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "toTwitterSegue", sender: word)
+    }
+    
+    
+    
     
     // Share button
     @IBAction func shareButtonPressed(_ sender: Any) {

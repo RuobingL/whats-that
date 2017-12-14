@@ -11,7 +11,6 @@
 		F22965B71FE06A7800A836DB /* PhotoIdentificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965B61FE06A7800A836DB /* PhotoIdentificationViewController.swift */; };
 		F22965B91FE06AB400A836DB /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965B81FE06AB400A836DB /* PhotoDetailsViewController.swift */; };
 		F22965BB1FE06AD900A836DB /* SearchTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965BA1FE06AD900A836DB /* SearchTimelineViewController.swift */; };
-		F22965BD1FE06AEE00A836DB /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965BC1FE06AEE00A836DB /* SafariViewController.swift */; };
 		F22965C81FE06E1200A836DB /* FavoritePhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965C71FE06E1200A836DB /* FavoritePhotosTableViewController.swift */; };
 		F22965CA1FE06E3700A836DB /* WikipediaAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965C91FE06E3700A836DB /* WikipediaAPIManager.swift */; };
 		F22965CC1FE06E4900A836DB /* GoogleVisionAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22965CB1FE06E4900A836DB /* GoogleVisionAPIManager.swift */; };
@@ -34,7 +33,6 @@
 		F22965B61FE06A7800A836DB /* PhotoIdentificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIdentificationViewController.swift; sourceTree = "<group>"; };
 		F22965B81FE06AB400A836DB /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		F22965BA1FE06AD900A836DB /* SearchTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTimelineViewController.swift; sourceTree = "<group>"; };
-		F22965BC1FE06AEE00A836DB /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		F22965C71FE06E1200A836DB /* FavoritePhotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotosTableViewController.swift; sourceTree = "<group>"; };
 		F22965C91FE06E3700A836DB /* WikipediaAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaAPIManager.swift; sourceTree = "<group>"; };
 		F22965CB1FE06E4900A836DB /* GoogleVisionAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionAPIManager.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 				F22965B61FE06A7800A836DB /* PhotoIdentificationViewController.swift */,
 				F22965B81FE06AB400A836DB /* PhotoDetailsViewController.swift */,
 				F22965BA1FE06AD900A836DB /* SearchTimelineViewController.swift */,
-				F22965BC1FE06AEE00A836DB /* SafariViewController.swift */,
 				F22965C71FE06E1200A836DB /* FavoritePhotosTableViewController.swift */,
 			);
 			path = "view controllers";
@@ -298,7 +295,6 @@
 				F22965DC1FE0D07400A836DB /* Codable.swift in Sources */,
 				F22965B71FE06A7800A836DB /* PhotoIdentificationViewController.swift in Sources */,
 				F2F0FA141FBA5A3C00FB7A15 /* AppDelegate.swift in Sources */,
-				F22965BD1FE06AEE00A836DB /* SafariViewController.swift in Sources */,
 				F22965DA1FE0B03100A836DB /* WikipediaResult.swift in Sources */,
 				F22965BB1FE06AD900A836DB /* SearchTimelineViewController.swift in Sources */,
 				F22965CC1FE06E4900A836DB /* GoogleVisionAPIManager.swift in Sources */,
