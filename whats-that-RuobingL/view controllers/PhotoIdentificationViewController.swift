@@ -27,12 +27,11 @@ import MBProgressHUD
             self.present(image, animated: true, completion: nil)
         }))
         
-        alertController.addAction(UIAlertAction(title: "cancel", style: .default, handler: { (action) in
-            self.present(alertController, animated: true, completion: nil)
-        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
     }
+    
     
     // pick an image to imageView
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

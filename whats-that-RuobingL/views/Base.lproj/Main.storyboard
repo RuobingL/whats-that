@@ -17,44 +17,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's that?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-7c-T5A">
-                                <rect key="frame" x="99" y="146" width="216" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNh-rr-GuJ">
-                                <rect key="frame" x="177" y="542" width="60" height="82.666666666666629"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Favs">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="VDV-Ze-0zV" kind="show" id="NSq-Po-xIt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wC-vw-f3g">
-                                <rect key="frame" x="156" y="344" width="102" height="48"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Camera">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zmV-Un-Q3E" kind="show" id="iv3-Nq-pF5"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nZC-00-gdx">
+                                <rect key="frame" x="99.333333333333343" y="296" width="215.66666666666666" height="144"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's that?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-7c-T5A">
+                                        <rect key="frame" x="0.0" y="0.0" width="215.66666666666669" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="b6R-6d-6gi">
+                                        <rect key="frame" x="57.000000000000014" y="48" width="101.99999999999999" height="96"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wC-vw-f3g">
+                                                <rect key="frame" x="0.0" y="0.0" width="101.99999999999997" height="48"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Camera">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="zmV-Un-Q3E" kind="show" id="iv3-Nq-pF5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNh-rr-GuJ">
+                                                <rect key="frame" x="21" y="48" width="60" height="48"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Favs">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="VDV-Ze-0zV" kind="show" id="NSq-Po-xIt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="iNh-rr-GuJ" firstAttribute="top" secondItem="4wC-vw-f3g" secondAttribute="bottom" constant="150" id="4Nj-CA-vBT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iNh-rr-GuJ" secondAttribute="bottom" constant="111.5" id="5YS-o1-ff6"/>
-                            <constraint firstItem="3gg-7c-T5A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9AB-WO-xP2"/>
-                            <constraint firstItem="iNh-rr-GuJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BF1-dx-jz5"/>
-                            <constraint firstItem="4wC-vw-f3g" firstAttribute="top" secondItem="3gg-7c-T5A" secondAttribute="bottom" constant="150" id="CKP-rn-KDS"/>
-                            <constraint firstItem="4wC-vw-f3g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pNt-ss-jE3"/>
-                            <constraint firstItem="4wC-vw-f3g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pVE-FG-ijG"/>
+                            <constraint firstItem="nZC-00-gdx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E7z-2i-3nN"/>
+                            <constraint firstItem="nZC-00-gdx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vWK-GK-4eZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
