@@ -19,7 +19,8 @@ class WikipediaManager {
     var delegate:WikipediaResultDelegate?
     
     func fetchWikipediaResults(label: String){
-        var wikipediaResults = WikipediaResults(extract: "")
+        var wikipediaResults = WikipediaResults(title: "", extract: "")
+        var titleResult = ""
         var detailResult = ""
         var urlComponents = URLComponents(string: "https://en.wikipedia.org/w/api.php?")!
         
@@ -69,13 +70,16 @@ class WikipediaManager {
             }
             
             for item in pageidJsonObject{
+                if(item.key == "title"){
+                    titleResult = item.value as! String
+                }
                 if(item.key == "extract"){
                     detailResult = item.value as! String
                 }
             }
             
             print("4", detailResult)
-            let result = WikipediaResults(extract: detailResult)
+            let result = WikipediaResults(title: titleResult, extract: detailResult)
             self.delegate?.wikipediaResultFound(wikipediaResults: result)
         }
         

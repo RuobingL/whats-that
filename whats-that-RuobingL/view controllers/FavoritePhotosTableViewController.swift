@@ -23,7 +23,7 @@ class FavoritePhotosTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favCell", for: indexPath) as! FavTableViewCell
         let item = list[indexPath.row]
-        cell.label?.text = item.extract
+        cell.label?.text = item.title
         return cell
     }
     

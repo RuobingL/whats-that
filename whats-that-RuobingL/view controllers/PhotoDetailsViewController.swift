@@ -5,7 +5,7 @@ import Social
 class PhotoDetailsViewController: UIViewController {
 
     var wikipediaAPIManager = WikipediaManager()
-    var wikiResult = WikipediaResults(extract: "")
+    var wikiResult = WikipediaResults(title: "", extract: "")
     
     @IBOutlet weak var textLabelTitle: UILabel!
     @IBOutlet weak var textViewLoad: UITextView!
