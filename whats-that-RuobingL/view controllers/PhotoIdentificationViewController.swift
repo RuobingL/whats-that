@@ -1,4 +1,5 @@
 import UIKit
+import MBProgressHUD
 
  class PhotoIdentificationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource{
 
@@ -35,9 +36,14 @@ import UIKit
     
     // pick an image to imageView
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
             imageViewLoad.image = image
+            // show progress bar
+            MBProgressHUD.showAdded(to: self.view, animated: true)
+            
             googleVisionAPIManager.fetchGoogleVisionAPIResult(image: image)
+            
         }
         else{
             // error message
@@ -91,15 +97,19 @@ import UIKit
 
 extension PhotoIdentificationViewController: GoogleVisionManagerDelegate{
     func resultFound(googleVisionResult: [GoogleVisionResults]) {
-        print("test")
+        // hide progress bar
+
         print(googleVisionResult)
         self.results = googleVisionResult
         DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
             self.tableViewLoad.reloadData()
         }
     }
     
     func resultNotFound() {
+        // hide progress bar
+        // MBProgressHUD.hide(for: self.view, animated: true)
         print("result not found")
     }
 }
