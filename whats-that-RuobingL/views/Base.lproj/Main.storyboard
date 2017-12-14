@@ -31,7 +31,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QOl-dG-Y5o" kind="show" id="IhZ-NN-F9H"/>
+                                    <segue destination="VDV-Ze-0zV" kind="show" id="NSq-Po-xIt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wC-vw-f3g">
@@ -65,32 +65,44 @@
             <point key="canvasLocation" x="408.80000000000001" y="131.78410794602701"/>
         </scene>
         <!--Favorite Photos Table View Controller-->
-        <scene sceneID="Sra-W2-6tp">
+        <scene sceneID="gO5-u2-tsj">
             <objects>
-                <tableViewController id="QOl-dG-Y5o" customClass="FavoritePhotosTableViewController" customModule="whats_that_RuobingL" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RE8-hj-90l">
+                <tableViewController id="VDV-Ze-0zV" customClass="FavoritePhotosTableViewController" customModule="whats_that_RuobingL" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9jY-b5-chO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="4hm-TO-GFV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favCell" id="TCz-D7-phl" customClass="FavTableViewCell" customModule="whats_that_RuobingL" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4hm-TO-GFV" id="574-ta-b2X">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TCz-D7-phl" id="8zg-EC-FQb">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3p-QK-Uby">
+                                            <rect key="frame" x="8" y="0.0" width="165" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="b3p-QK-Uby" id="fye-bQ-fuw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="QOl-dG-Y5o" id="gVG-XV-atX"/>
-                            <outlet property="delegate" destination="QOl-dG-Y5o" id="ixp-jl-ngO"/>
+                            <outlet property="dataSource" destination="VDV-Ze-0zV" id="zV6-5F-Pdi"/>
+                            <outlet property="delegate" destination="VDV-Ze-0zV" id="kBT-aS-PRK"/>
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nwS-Lg-EGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vq0-P6-GIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1418.4000000000001" y="598.65067466266873"/>
+            <point key="canvasLocation" x="1389.8550724637682" y="557.60869565217399"/>
         </scene>
         <!--Photo Identification View Controller-->
         <scene sceneID="p59-9k-7a0">
@@ -167,7 +179,7 @@
             </objects>
             <point key="canvasLocation" x="1410.4000000000001" y="-198.35082458770617"/>
         </scene>
-        <!--Photo Details View Controller-->
+        <!--Title-->
         <scene sceneID="bwc-4U-Pr7">
             <objects>
                 <viewController id="Abz-Uf-Iet" customClass="PhotoDetailsViewController" customModule="whats_that_RuobingL" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,11 +226,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xM-Yu-MPz">
-                                <rect key="frame" x="364" y="86" width="30" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="fav"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -228,18 +235,23 @@
                             <constraint firstItem="RHy-Rx-laO" firstAttribute="top" secondItem="TYf-r5-lD3" secondAttribute="bottom" constant="8" id="FLL-vh-mkh"/>
                             <constraint firstItem="aAf-gu-rQ6" firstAttribute="bottom" secondItem="RHy-Rx-laO" secondAttribute="bottom" constant="20" id="KCg-d2-azI"/>
                             <constraint firstItem="bJR-7w-AvZ" firstAttribute="leading" secondItem="aAf-gu-rQ6" secondAttribute="leading" constant="20" id="LDW-BM-8TB"/>
-                            <constraint firstItem="aAf-gu-rQ6" firstAttribute="trailing" secondItem="7xM-Yu-MPz" secondAttribute="trailing" constant="20" id="MMK-pD-hUs"/>
                             <constraint firstItem="RHy-Rx-laO" firstAttribute="centerX" secondItem="kv6-w7-zaP" secondAttribute="centerX" id="NyQ-rs-rBB"/>
                             <constraint firstItem="Nd9-of-kUu" firstAttribute="top" secondItem="aAf-gu-rQ6" secondAttribute="top" constant="22" id="T2Q-Va-9Kb"/>
                             <constraint firstItem="TYf-r5-lD3" firstAttribute="leading" secondItem="aAf-gu-rQ6" secondAttribute="leading" constant="20" id="Z1y-ke-4JJ"/>
                             <constraint firstItem="aAf-gu-rQ6" firstAttribute="trailing" secondItem="TYf-r5-lD3" secondAttribute="trailing" constant="20" id="gfk-JR-u58"/>
                             <constraint firstItem="TYf-r5-lD3" firstAttribute="centerX" secondItem="kv6-w7-zaP" secondAttribute="centerX" id="jGT-8D-hXV"/>
                             <constraint firstItem="Nd9-of-kUu" firstAttribute="centerX" secondItem="kv6-w7-zaP" secondAttribute="centerX" id="k7r-Vn-D7H"/>
-                            <constraint firstItem="7xM-Yu-MPz" firstAttribute="top" secondItem="aAf-gu-rQ6" secondAttribute="top" constant="22" id="rOi-wi-yTw"/>
                             <constraint firstItem="aAf-gu-rQ6" firstAttribute="trailing" secondItem="OkZ-SL-cPi" secondAttribute="trailing" constant="16" id="zvN-iC-rpw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aAf-gu-rQ6"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="wmw-o4-fNY">
+                        <barButtonItem key="rightBarButtonItem" title="fav" id="qNQ-fH-pim">
+                            <connections>
+                                <action selector="favButtonPressed:" destination="Abz-Uf-Iet" id="aUw-vF-qpL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textLabelTitle" destination="Nd9-of-kUu" id="Tj6-a6-J4e"/>
                         <outlet property="textViewLoad" destination="TYf-r5-lD3" id="Pr8-YL-xgC"/>

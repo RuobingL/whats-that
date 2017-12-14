@@ -5,7 +5,8 @@ import Social
 class PhotoDetailsViewController: UIViewController {
 
     var wikipediaAPIManager = WikipediaManager()
-
+    var wikiResult = WikipediaResults(extract: "")
+    
     @IBOutlet weak var textLabelTitle: UILabel!
     @IBOutlet weak var textViewLoad: UITextView!
     
@@ -30,6 +31,7 @@ class PhotoDetailsViewController: UIViewController {
         guest.query = sender as! String
     }
     
+    // Wiki button
     @IBAction func wikiButtonPressed(_ sender: Any) {
         let svc = SFSafariViewController(url: URL(string: "http://www.wikipedia.org/wiki/\(word)")!)
         self.present(svc, animated: true, completion: nil)
@@ -39,9 +41,6 @@ class PhotoDetailsViewController: UIViewController {
     @IBAction func twitterButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "toTwitterSegue", sender: word)
     }
-    
-    
-    
     
     // Share button
     @IBAction func shareButtonPressed(_ sender: Any) {
@@ -99,10 +98,18 @@ class PhotoDetailsViewController: UIViewController {
         // display alert
         self.present(errorAlert, animated: true, completion: nil)
     }
+    
+    // fav button
+    @IBAction func favButtonPressed(_ sender: Any) {
+        Persistance.sharedInstance.saveWikipediaResults(wikiResult)
+    }
 }
 
 extension PhotoDetailsViewController: WikipediaResultDelegate{
     func wikipediaResultFound(wikipediaResults: WikipediaResults) {
+        
+        self.wikiResult = wikipediaResults
+        
         print("find", wikipediaResults.extract)
         DispatchQueue.main.async {
             self.textViewLoad.text = wikipediaResults.extract

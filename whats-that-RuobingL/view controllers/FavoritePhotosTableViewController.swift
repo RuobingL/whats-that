@@ -7,14 +7,26 @@
 //
 
 import UIKit
-import CoreData
 
 class FavoritePhotosTableViewController: UITableViewController {
-    
+    var list = Persistance.sharedInstance.fetchWikipediaResults()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favCell", for: indexPath) as! FavTableViewCell
+        let item = list[indexPath.row]
+        cell.label?.text = item.extract
+        return cell
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
